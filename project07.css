@@ -1,0 +1,153 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom right, #ffe6e6, #ffccf2);
+}
+
+/* Calculator container */
+.calculator {
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+  overflow: hidden;
+}
+
+/* Display styles */
+.display {
+  background: #f8bbd0;
+  color: black;
+  font-size: 2rem;
+  text-align: right;
+  padding: 15px;
+  border-radius: 20px 20px 0 0;
+}
+
+.display input {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  width: 100%;
+  border: none;
+  background: none;
+  color: black;
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+/* Buttons layout */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 15px;
+  background: #fde6ff;
+}
+
+/* Button styles */
+.btn {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 1.2rem;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+  box-shadow: 0 4px 8px rgba(255, 182, 193, 0.3);
+  color: black;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* Row 1: Pink */
+.btn:nth-child(1),
+.btn:nth-child(2),
+.btn:nth-child(3),
+.btn:nth-child(4) {
+  background: #ff9aa2; /* Pink */
+}
+
+.btn:nth-child(1):hover,
+.btn:nth-child(2):hover,
+.btn:nth-child(3):hover,
+.btn:nth-child(4):hover {
+  background: #f06d7e; /* Darker pink */
+}
+
+/* Row 2: Orange */
+.btn:nth-child(5),
+.btn:nth-child(6),
+.btn:nth-child(7),
+.btn:nth-child(8) {
+  background: #ffcc99; /* Orange */
+}
+
+.btn:nth-child(5):hover,
+.btn:nth-child(6):hover,
+.btn:nth-child(7):hover,
+.btn:nth-child(8):hover {
+  background: #ffb366; /* Darker orange */
+}
+
+/* Row 3: Yellow */
+.btn:nth-child(9),
+.btn:nth-child(10),
+.btn:nth-child(11),
+.btn:nth-child(12) {
+  background: #ffeb99; /* Yellow */
+}
+
+.btn:nth-child(9):hover,
+.btn:nth-child(10):hover,
+.btn:nth-child(11):hover,
+.btn:nth-child(12):hover {
+  background: #ffd34d; /* Darker yellow */
+}
+
+/* Row 4: Green */
+.btn:nth-child(13),
+.btn:nth-child(14),
+.btn:nth-child(15),
+.btn:nth-child(16) {
+  background: #b3e5c4; /* Green */
+}
+
+.btn:nth-child(13):hover,
+.btn:nth-child(14):hover,
+.btn:nth-child(15):hover,
+.btn:nth-child(16):hover {
+  background: #81c0a0; /* Darker green */
+}
+
+/* Row 5: Blue */
+.btn:nth-child(17),
+.btn:nth-child(18),
+.btn:nth-child(19),
+.btn:nth-child(20) {
+  background: #a3d9f5; /* Blue */
+}
+
+.btn:nth-child(17):hover,
+.btn:nth-child(18):hover,
+.btn:nth-child(19):hover,
+.btn:nth-child(20):hover {
+  background: #76b9d6; /* Darker blue */
+}
+
+/* Row 6: Purple */
+.btn:nth-child(21),
+.btn:nth-child(22),
+.btn:nth-child(23),
+#square {
+  background: #cbb4d4; /* Purple */
+}
+
+.btn:nth-child(21):hover,
+.btn:nth-child(22):hover,
+.btn:nth-child(23):hover,
+#square:hover {
+  background: #a88ba8; /* Darker purple */
+}
